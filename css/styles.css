@@ -115,35 +115,29 @@
 }
 
 .article h2 {
-  position: relative;
-  display: flex;
   text-transform: uppercase;
   letter-spacing: 0.09em;
   color: var(--faded-navy-grey);
 }
 
 .article-number {
+  display: inline-block;
   font-size: 5em;
   letter-spacing: 0.09em;
   color: var(--very-faded-navy-grey);
 }
 
 .square-dot {
-  position: absolute;
-  bottom: 25px;
-  left: 175px;
   display: inline-block;
-  align-self: flex-end;
-  width: 15px;
-  height: 15px;
-  background-color: var(--very-faded-navy-grey);
+  font-size: 0.7em;
+  color: var(--very-faded-navy-grey);
 }
 
 .article-heading-text {
+  vertical-align: middle;
   display: inline-block;
-  align-self: center;
-  margin-top: 35px;
-  margin-left: -15px;
+  margin-top: -80px;
+  margin-left: -50px;
 }
 
 .article p {
@@ -203,6 +197,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
+}
+
+.secondary-article .square-dot {
+  margin-left: -15px;
 }
 
 .mountain-nav-wrapper {
@@ -353,16 +351,20 @@ footer p {
     margin-left: -20px;
   }
 
-  .square-dot {
-    margin-bottom: 30px;
-  }
-
   .carousel-item {
     margin-left: 12px;
   }
 
+  .article-heading-text {
+    margin-left: -60px;
+  }
+
   .secondary-article {
     position: relative;
+  }
+
+  .secondary-article .article-heading-text {
+    margin-left: -40px;
   }
 
   .secondary-article p {
