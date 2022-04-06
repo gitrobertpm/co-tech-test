@@ -1,3 +1,375 @@
-body {
-  background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400&display=swap");
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+  --white: rgba(255, 255, 255, 0.8);
+  --black: rgba(0, 0, 0, 0.7);
+  --grey: rgb(200, 200, 200);
+  --navy-grey: rgb(65, 79, 107);
+  --faded-navy-grey: rgba(65, 79, 107, 0.8);
+  --very-faded-navy-grey: rgba(65, 79, 107, 0.3);
+}
+
+/* LANDING PAGE */
+.landing {
+  height: 100vh;
+  padding-bottom: 200px;
+  background-image: url("../img/mountain-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.navbar {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.sup-nav {
+  display: none;
+}
+
+.nav-item {
+  margin: auto 15px;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  padding: 0;
+}
+
+.navbar-light.primary-navbar .navbar-nav .nav-link {
+  color: var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
+.primary-heading {
+  font-family: "Lato", sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.09em;
+}
+
+.primary-heading:nth-of-type(1) {
+  color: var(--black);
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+.primary-heading:nth-of-type(2) {
+  color: var(--navy-grey);
+  margin-top: -5px;
+  margin-left: -10px;
+}
+/* END OF SECTION */
+
+/* SECTION ONE */
+.sup-navbar .nav-link {
+  color: var(--faded-navy-grey);
+  border-bottom: 2px solid var(--faded-navy-grey);
+}
+
+.navbar-brand {
+  display: flex;
+  flex-flow: row;
+}
+
+.nav-brand-text {
+  margin-left: 10px;
+}
+
+.nav-brand-text span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.sup-nav-brand-text span:nth-of-type(1) {
+  color: var(--black);
+}
+
+.sup-nav-brand-text span:nth-of-type(2) {
+  color: var(--navy-grey);
+}
+
+.nav-brand-text span:nth-of-type(2) {
+  margin-top: -10px;
+}
+
+.primary-content {
+  background-image: url("../img/mountain-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.article {
+  max-width: 1024px;
+  margin: auto auto 50px;
+  padding-top: 25px;
+}
+
+.article h2 {
+  position: relative;
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--faded-navy-grey);
+}
+
+.article-number {
+  font-size: 5em;
+  letter-spacing: 0.09em;
+  color: var(--very-faded-navy-grey);
+}
+
+.square-dot {
+  position: absolute;
+  bottom: 25px;
+  left: 175px;
+  display: inline-block;
+  align-self: flex-end;
+  width: 15px;
+  height: 15px;
+  background-color: var(--very-faded-navy-grey);
+}
+
+.article-heading-text {
+  display: inline-block;
+  align-self: center;
+  margin-top: 35px;
+  margin-left: -15px;
+}
+
+.article p {
+  color: var(--black);
+  font-weight: 600;
+  max-width: 768px;
+  margin-left: 75px;
+}
+
+.primary-article p {
+  margin-top: -25px;
+}
+
+.carousel-wrapper {
+  margin-top: 75px;
+  background-color: var(--faded-navy-grey);
+}
+
+.carousel {
+  max-width: 952px;
+  margin: auto;
+  padding: 10px 0 35px;
+}
+
+.carousel-inner {
+  max-height: 136px;
+  margin: 0px auto 10px;
+}
+
+.carousel-item {
+  margin-left: 8px;
+}
+
+.carousel-item img {
+  width: 23%;
+}
+
+.carousel-indicators {
+  margin: 5px auto;
+}
+
+.carousel-indicators .car-btn {
+  width: 50px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.carousel-indicators .car-btn:nth-of-type(2) {
+  margin: auto 25px;
+}
+/* END OF SECTION */
+
+/* SECTION TWO */
+.secondary-content {
+  padding-bottom: 200px;
+  background-image: url("../img/mountain-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.mountain-nav-wrapper {
+  padding: 15px;
+  background-color: var(--navy-grey);
+}
+
+.mountain-nav-wrapper .navbar {
+  padding: 0;
+}
+
+.mountain-nav-wrapper .navbar-expand-sm .navbar-nav .nav-link {
+  display: inline-block;
+  color: var(--grey);
+  padding: 10px 10px 5px;
+}
+
+.secondary-article {
+  margin-bottom: 0;
+}
+
+.schedule-wrapper {
+  max-width: 1024px;
+  margin: 25px auto auto;
+}
+
+.schedule-box {
+  max-width: 400px;
+  padding: 25px 50px;
+  background-color: var(--white);
+  border-radius: 2px;
+}
+
+.schedule-box h3 {
+  text-transform: uppercase;
+  color: var(--navy-grey);
+}
+
+.schedule-box ul {
+  list-style: none;
+  padding: 0;
+}
+/* END OF SECTION */
+
+/* FOOTER */
+footer {
+  padding: 15px;
+  background-color: var(--navy-grey);
+}
+
+.footer-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: auto;
+}
+
+footer .navbar-brand {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+}
+
+.footer-img-overlay {
+  position: absolute;
+  width: 48px;
+  height: 50px;
+  background-color: var(--faded-navy-grey);
+  background-color: rgba(117, 130, 155, 0.7);
+  border-radius: 50%;
+}
+
+.footer-nav-brand-text span {
+  color: rgb(117, 130, 155);
+}
+
+footer p {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: rgb(117, 130, 155);
+  margin-top: 15px;
+}
+/* END OF SECTION */
+
+/* MEDIA QUERIES ↓↓↓ */
+@media screen and (min-width: 576px) {
+  .hideable-navbar-collapse * {
+    display: none;
+  }
+
+  .sup-nav {
+    display: flex;
+  }
+
+  .carousel {
+    padding: 25px 0 25px;
+  }
+
+  .carousel-item img {
+    width: 24%;
+  }
+
+  .carousel-indicators .car-btn {
+    width: 10px;
+    border-radius: 50%;
+  }
+
+  .carousel-indicators .car-btn:nth-of-type(2) {
+    margin: auto 10px;
+  }
+
+  .mountain-nav-wrapper {
+    height: 45px;
+    padding: 0;
+  }
+
+  .mountain-nav-wrapper .nav-link {
+    height: 45px;
+  }
+
+  .mountain-nav-wrapper .navbar-expand-sm .navbar-nav .active {
+    color: var(--navy-grey);
+    background-color: var(--grey);
+  }
+
+  .mountain-nav-wrapper .active span {
+    border-bottom: 2px solid var(--navy-grey);
+  }
+
+  .schedule-box {
+    margin-top: 100px;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing {
+    padding-bottom: 300px;
+  }
+
+  .primary-heading {
+    font-size: 5em;
+  }
+
+  .primary-heading:nth-of-type(2) {
+    margin-left: -20px;
+  }
+
+  .square-dot {
+    margin-bottom: 30px;
+  }
+
+  .carousel-item {
+    margin-left: 12px;
+  }
+
+  .secondary-article {
+    position: relative;
+  }
+
+  .secondary-article p {
+    position: absolute;
+    top: 90px;
+    left: 235px;
+    max-width: 600px;
+    padding-right: 25px;
+  }
 }
